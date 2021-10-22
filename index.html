@@ -6,6 +6,22 @@
 	<style type="text/css">
 		html{background-color: black}
 
+		body{
+  			background-color: black;
+  		}	
+
+		h2{
+			color:white;
+			font-family: "Lucida Console", "Courier New", monospace;
+			font-size: 20pt
+		}
+		
+		h3{
+			color:white;
+			font-family: "Lucida Console", "Courier New", monospace;
+			font-size: 14pt
+		}
+
 		.containerB{
 			position:relative;
 			display: inline-block;
@@ -16,27 +32,85 @@
 			height:500px;
 			
 		}
-
-		#Picasso-SheffG{
-			 
+		#portal1{
+			width:100px;
+			height:70px;
+			background-color:black;
+			border-radius:50%; 
+			animation-name:portalone;
+			animation-duration: 5s;
+			animation-iteration-count: 10000;
+			position: absolute;
 		}
-
-		#RunItUp-Aminé{
-			
+		@keyframes portalone {
+  			0%   {top: 0px; left: -150px;}
+  			25%  {top: 250px; left: -150px;}
+  			50%  {top: 500px; left: -150px;}
+  			75%  {top: 750px; left: -150px;}
+  			100% {top: 1000px; left: -150px;}
+  		}
+		
+		
+		#portal2{
+			width:100px;
+			height:70px;
+			background-color:black;
+			border-radius:50%; 
+			animation-name:portaltwo;
+			animation-duration: 5s;
+			animation-iteration-count: 1000;
+			position: absolute;	
 		}
+		@keyframes portaltwo {
+  			0%   {top: 1000px; left: 1050px;}
+  			25%  {top: 750px; left: 1050px;}
+  			50%  {top: 500px; left: 1050px;}
+  			75%  {top: 250px; left: 1050px;}
+  			100% {top: 0px; left: 1050px;}
+  		}
 
-		#DrumDummy-SheffG{
-			
-		}
+  		
 
-		#WetEmUp-SheffG{
-			
+  		#popsmoke1{
+			width:80px;
+			height:80px;
+			top:250px; left:-142px;
+			animation-name:popsmokeone; 
+			animation-duration: 5s;
+			animation-iteration-count: 1000;
+			position: absolute;
 		}
+		@keyframes popsmokeone {
+  			0%   {opacity:0%;}  			
+  			25%  {opacity:0%;}
+  			100% {opacity:100%;}
+  		}
+
+  		#popsmoke2{
+			width:80px;
+			height:80px;
+			animation-name:popsmoketwo; 
+			top:250px; left:1062px;
+			animation-duration: 5s;
+			animation-iteration-count: 1000;
+			position: absolute;
+		}
+		@keyframes popsmoketwo {
+  			0%   {opacity:0%;}  			
+  			77%  {opacity:0%;}
+  			100% {opacity:100%;}
+  		}
+  		
+  		body{
+  			background-color: black;
+  		}	
+
 		h2{
 			color:white;
 			font-family: "Lucida Console", "Courier New", monospace;
 			font-size: 20pt
 		}
+		
 		h3{
 			color:white;
 			font-family: "Lucida Console", "Courier New", monospace;
@@ -44,22 +118,29 @@
 		}
 
 
-
-
-
-
-
-
 	</style>
 </head>
-
 
 
 <body>
 	<center>
 	<div class="contain"></div>
-	
+	<div id="portal1"></div>
+	<div id="portal2"></div>
+	<div id="popsmoke1"></div>
+	<div id="popsmoke2"></div>
+	<div id="sheffg"></div>
+	<div id="fivioforeign"></div>
 	<div class="containerB">
+	
+	<img id="portal1" src="https://c.tenor.com/n4Ohx6dPMmEAAAAM/omega-portal.gif">
+
+	<img id="portal2" src="https://c.tenor.com/n4Ohx6dPMmEAAAAM/omega-portal.gif">
+
+	<img id="popsmoke1" src="https://upload.wikimedia.org/wikipedia/en/1/13/Pop_Smoke_-_Meet_the_Woo_2.png">
+
+	<img id="popsmoke2" src="https://upload.wikimedia.org/wikipedia/en/1/13/Pop_Smoke_-_Meet_the_Woo_2.png">
+
 	<a href="journal.html">
 		<img class="albumCovers" id="Picasso-SheffG" src="https://images.genius.com/6cb76a3353f92ab7a736115bf7396999.1000x1000x1.png">
 		
@@ -129,3 +210,9 @@
 
 </body>
 </html>>
+
+
+
+
+
+
