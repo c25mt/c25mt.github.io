@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+			background-color: black
+		}
+		
+	</style>
+</head>
+<body>
+
+
+
+<div id="postnaruto"></div>
+	<img id="postnaruto" src="https://www.freepnglogos.com/uploads/naruto-png/unsg-naruto-render-xsaiyan-21.png">
+
+<audio src="${ https://www.youtube.com/watch?v=1kfUvIZBvus }" id="audio"></audio>
+<i class="glyphicon glyphicon-play-circle b-play" id="play" onclick="play()"></i>
+
+<script>
+    function play() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
+            $('#play').removeClass('glyphicon-play-circle')
+            $('#play').addClass('glyphicon-pause')
+        }
+        else{
+            audio.pause();
+            audio.currentTime = 0
+            $('#play').addClass('glyphicon-play-circle')
+            $('#play').removeClass('glyphicon-pause')
+        }
+    	play()
+</script>
+</body>
+</html>
