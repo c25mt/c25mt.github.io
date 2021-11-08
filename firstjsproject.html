@@ -12,19 +12,27 @@
 <body>
 
 
-
-<div id="postnaruto"></div>
+<center>
 	<img id="postnaruto" src="https://www.freepnglogos.com/uploads/naruto-png/unsg-naruto-render-xsaiyan-21.png">
+</center>
 
-<audio src="https://www.youtube.com/watch?v=1kfUvIZBvus"></audio>
+<audio id="sound" src="naruto says his name.mp3"></audio>
 
 <script>
-      function playAudio(){
-      	document.getElementByID("audio")
-      }
 
-     playAudio()
+	  var postnaruto = document.getElementById('postnaruto');
+  var sound = document.getElementById('sound');
 
+
+	function playSound() {
+		sound.play();
+		console.log("hi");
+
+  }
+
+
+	postnaruto.addEventListener("click", playSound)
+      
 
     </script>
 
