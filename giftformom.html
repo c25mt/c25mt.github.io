@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday Mom</title>
+
+	<style type="text/css">
+		
+	h1{
+		color: white;
+		font-size: 80px;
+		font-family: 'Trebuchet MS', sans-serif;
+	}
+
+	body{
+		background-color: black;
+	}
+
+
+	</style>
+</head>
+<body>
+
+	<center>
+	
+		<a href="BirthdayMessage.html"><h1>HAPPY BIRTHDAY MOM!</h1></a>
+	
+	</center>
+
+		
+	<audio id="sound" src="Jerusalema.mp3"></audio>
+		
+		
+
+	<script type="text/javascript">
+		
+	  
+  	var sound = document.getElementById('sound');
+
+
+	function playSound() {
+		sound.play();
+		console.log("hi");
+
+  }
+
+
+	document.addEventListener("click", playSound)
+
+	function makePicture1() {
+
+		var picture1 = document.createElement("div")
+
+		document.body.appendChild(picture1)
+			picture1.style.height = "930px";
+			picture1.style.width = "993px" ;
+			picture1.style.backgroundImage = "url(494.jpeg)";
+			picture1.style.backgroundSize = "cover"
+			picture1.style.display = "inline-block"
+			picture1.style.margin = "200px"
+	}
+
+	function makePicture2() {
+
+		var picture2 = document.createElement("div")
+
+		document.body.appendChild(picture2)
+			picture2.style.height = "814px";
+			picture2.style.width = "1100px" ;
+			picture2.style.backgroundImage = "url(IMG_20190131_065338.jpg)";
+			picture2.style.backgroundSize = "cover"
+			picture2.style.display = "inline-block"
+			picture2.style.margin = "175px"
+	}
+
+	function makePicture3() {
+
+		var picture3 = document.createElement("div")
+
+		document.body.appendChild(picture3)
+			picture3.style.height = "1000px";
+			picture3.style.width = "832px" ;
+			picture3.style.backgroundImage = "url(IMG_20190131_065312.jpg)";
+			picture3.style.backgroundSize = "cover"
+			picture3.style.display = "inline-block"
+			picture3.style.margin = "200px"
+	}
+
+	function makePicture4() {
+
+		var picture4 = document.createElement("div")
+
+		document.body.appendChild(picture4)
+			picture4.style.height = "735px";
+			picture4.style.width = "978px" ;
+			picture4.style.backgroundImage = "url(5248.jpeg)";
+			picture4.style.backgroundSize = "cover"
+			picture4.style.display = "inline-block"
+			picture4.style.margin = "200px"
+	}
+
+	function makePicture5() {
+
+		var picture5 = document.createElement("div")
+
+		document.body.appendChild(picture5)
+			picture5.style.height = "924px";
+			picture5.style.width = "1100px" ;
+			picture5.style.backgroundImage = "url(505.jpeg)";
+			picture5.style.backgroundSize = "cover"
+			picture5.style.display = "inline-block"
+			picture5.style.margin = "200px"
+	}
+
+	setInterval(makePicture1,1000)
+	setInterval(makePicture2,1000)
+	setInterval(makePicture3,1000)
+	setInterval(makePicture4,1000)
+	setInterval(makePicture5,1000)
+
+	</script>
+
+
+</body>
+</html>
