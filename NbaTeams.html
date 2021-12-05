@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NBA Team Clicker</title>
+
+<style type="text/css">
+	
+	body{
+		background-color:black;
+		color:white;
+		font-family: 'Alegreya Sans SC';font-size: 22px;
+	}
+
+	
+
+
+</style>
+
+
+</head>
+<body>
+
+	<center>
+		<h1>NBA TEAM CLICKER</h1>
+	</center>
+	<center>
+		<h3>Click on the first letter of an NBA Team's name to see their court!</h3>
+	</center>
+
+
+<center>
+	<script type="text/javascript">
+		function makeCourt() {
+
+		var court = document.createElement("div")
+
+
+		document.body.appendChild(court);
+
+
+	
+	court.style.width = "950px";
+	court.style.height = "500px";
+	court.style.backgroundSize = "contain";
+	court.style.margin = "200px";
+	
+
+
+
+	
+			
+		document.addEventListener("keypress", function(event) {
+			console.log(event)
+				if (event.key == "w")
+				{court.style.backgroundImage = "url(warriorscourt.jpeg)";}
+
+			})
+
+
+
+		document.addEventListener("keypress", function(event) {
+			console.log(event)
+				if (event.key== "n"){
+
+		court.style.backgroundImage = "url(netscourt.jpeg)";}
+
+			 
+		})
+
+		document.addEventListener("keypress", function(event) {
+			console.log(event)
+				if (event.key== "k"){
+
+		court.style.backgroundImage = "url(knickscourt.png)";}
+
+			 
+		})
+
+		document.addEventListener("keypress", function(event) {
+			console.log(event)
+				if (event.key== "t"){
+
+		court.style.backgroundImage = "url(timberwolvescourt.jpeg)";}
+
+			 
+		})
+
+		document.addEventListener("keypress", function(event) {
+			console.log(event)
+				if (event.key== "b"){
+
+		court.style.backgroundImage = "url(buckscourt.webp)";}
+
+			 
+		})
+
+	}
+
+	
+
+			makeCourt()
+			
+	</script>
+</center>
+
+</body>
+</html>
