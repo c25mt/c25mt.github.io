@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Theodore.</title>
+
+	<style type="text/css">
+		#Theo {
+			color: beige;
+			font-size: 100pt;
+			font-family: Verdana, serif;
+
+		}
+
+		html{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+<center>
+<div id="Theo">Grah Grah Boom</div>
+</center>
+
+<script type="text/javascript">
+	
+	function makeTheo(event) {
+
+	var x = document.createElement("div")
+	document.body.appendChild(x);
+	x.style.width = "1000px";
+	x.style.height = "1000px";
+	x.style.backgroundColor = "red";
+	x.style.backgroundSize = "contain";
+	x.style.display.margin = "200px";
+	x.style.backgroundImage="url(maxwell.jpg)";
+	x.style.backgroundSize="cover";
+
+
+
+
+ document.addEventListener("click", function() {
+
+			x.style.backgroundImage = "url(Theo Spotify Song Picture.jpg)";
+			console.log("hi")
+
+
+	})	
+
+ function flocka() {
+ 	var t = document.appendChild('Theo')
+
+ 	t.addEventListener("click", function() {
+
+ 	})
+ }
+	
+	}
+	
+makeTheo()
+			
+</script>
+</body>
+</html>
